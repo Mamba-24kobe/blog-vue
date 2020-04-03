@@ -1,0 +1,59 @@
+:root {
+  --name: 'mamba';
+  --less: #ffb929;
+  --more: #8600ff;
+  --hover: #6303b8;
+  --text: #fff;
+  --link: #000;
+  --active: #ffb929;
+  --img1: url('../../public/img/mamba1.jpg');
+  --img2: url('../../public/img/mamba2.jpg');
+  --img3: url('../../public/img/mamba3.jpg');
+  --img4: url('../../public/img/mamba4.jpg');
+  --first: 'R';
+  --icon: 'icon-R';
+  --behind: 'ose';
+  --headerUp: '风城玫瑰';
+  --headerDown: '永不凋零。。。';
+  --footerUp: 'The rose never fades';
+  --footerDown: "I'm the youngest MVP!";
+}
+@for $index from 1 through 4 {
+  .headBgImg-#{$index} {
+    background: var(--img#{$index}) no-repeat;
+  }
+}
+@each $dire in (left,right) {
+  .bgGrad-#{$dire} {
+    background: linear-gradient(to $dire, var(--less) 5%, var(--more) 95%);
+  };
+  .textGrad-#{$dire} {
+    background: linear-gradient(to $dire, var(--less) 5%, var(--more));
+    background-clip: text;
+    color: transparent;
+  };
+}
+.bgCol-less{
+  background-color: var(--less)
+}
+.bgCol-more{
+  background-color: var(--more)
+}
+.hover-more{
+  &:hover{
+    background-color: var(--hover); 
+  }
+}
+.col-less{
+  color: var(--less)
+}
+.col-more{
+  color: var(--more)
+}
+.border-less{
+  border-bottom: 2px solid var(--less)
+}
+.border-more{
+  border-bottom: 4px solid var(--more)
+}
+

@@ -1,0 +1,93 @@
+@import "./reset.scss";
+@import "./skins.scss";
+@import "./iconfont.scss";
+@import "./variable";
+@each $var in (10, 25, 50, 75, 90, 100) {
+  .width-#{$var} {
+    width: percentage($var/100);
+  }
+}
+@each $var in (left, center, right) {
+  .text-#{$var} {
+    text-align: $var !important;
+  }
+}
+$em: 1em;
+@for $indent from 1 through 10 {
+  .text-indent-#{$indent} {
+    text-indent: $indent*$em
+  }
+}
+@each $bord in (top, right, bottom, left) {
+  .border-#{$bord} {
+    border-#{$bord}: 1px solid #d4d4d5;
+  }
+}
+$px: 1px;
+@each $bord in (top, right, bottom, left) {
+  @for $width from 1 through 10 {
+    .border-#{$bord}-#{$width} {
+      border-#{$bord}: $width*$px solid #d4d4d5;
+    }    
+  }
+}
+@each $colorKey, $colorValue in $colors {
+  .col-#{$colorKey} {
+    color: $colorValue;
+  }
+  .bg-#{$colorKey} {
+    background-color: $colorValue;
+  }
+  .border-#{$colorKey} {
+    border: 1px solid $colorValue;
+  }
+}
+
+@each $sizeKey, $size in $font-sizes {
+  .fs-#{$sizeKey} {
+    font-size: $size * $base-font-size;
+  }
+}
+@for $weight from 1 through 10 {
+  .fw-#{$weight} {
+    font-weight: $weight*100 !important;
+  }
+}
+@each $typeKey, $type in $spacingTypes {
+  // m-1 p-1
+  @each $sizeKey, $size in $spacingSizes {
+    .#{$typeKey}-#{$sizeKey} {
+      #{$type}: $size * $spacingBaseSize;
+    }
+  }
+  // mx-1 my-1 px-1 py-1
+  @each $sizeKey, $size in $spacingSizes {
+    .#{$typeKey}x-#{$sizeKey} {
+      #{$type}-left: $size * $spacingBaseSize;
+      #{$type}-right: $size * $spacingBaseSize;
+    }
+    .#{$typeKey}y-#{$sizeKey} {
+      #{$type}-top: $size * $spacingBaseSize;
+      #{$type}-bottom: $size * $spacingBaseSize;
+    }
+  }
+  // mt-1 mb-1 ml-1 mr-1 pt-1 pb-1 pl-1 pr-1
+  @each $directionKey, $direction in $directions {
+    @each $sizeKey, $size in $spacingSizes {
+      .#{$typeKey}#{$directionKey}-#{$sizeKey} {
+        #{$type}-#{$direction}: $size * $spacingBaseSize;
+      }
+    }
+  }
+}
+@each $jcKey, $jc in $flex-jcs {
+  .jc-#{$jcKey} {
+    justify-content: $jc;
+  }
+}
+
+@each $aiKey, $ai in $flex-ais {
+  .ai-#{$aiKey} {
+    align-items: $ai;
+  }
+}

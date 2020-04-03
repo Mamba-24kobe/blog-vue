@@ -1,0 +1,58 @@
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff8ea;
+}
+a {
+  text-decoration: none;
+}
+// text overflow
+.text-ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-right{
+  text-align: right;
+}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }/*公共类*/
+.fl {float:left}
+.fr {float:right}
+// flex
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.jc-between{
+  justify-content: space-between;
+}
+.jc-center{
+  justify-content: center;
+}
+.jc-around{
+  justify-content: space-around;
+}
+.ai-center{
+  align-items: center;
+}
+.bg-linear{
+  background: linear-gradient(135deg,#8600ff,#ffb929);
+}

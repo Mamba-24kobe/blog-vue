@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "node接口",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "zsx",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.5.1",
+    "bcrypt": "^3.0.8",
+    "cors": "^2.8.5",
+    "express": "^5.0.0-alpha.7",
+    "formidable": "^1.2.2",
+    "gridfs-stream": "^1.1.1",
+    "http-assert": "^1.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.2",
+    "multer": "^1.4.2",
+    "multer-aliyun-oss": "^1.0.2",
+    "nodemailer": "^6.4.4",
+    "nodemailer-smtp-transport": "^2.7.4"
+  }
+}

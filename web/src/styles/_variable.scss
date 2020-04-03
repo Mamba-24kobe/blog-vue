@@ -1,0 +1,81 @@
+
+$colors: (
+  "orange": #ffb929,
+  "orange-light": #fff8ea,
+  "purple": #8600ff,
+  "blue": #409eff,
+  "white": #fff,
+  "grey":#efefee,
+  "grey-4":#989898,
+  "grey-1":#7b7b7b,
+  "dark": #333,
+  "black": #000,
+
+  "primary":#6bc30d,
+  "primary-1":#4ebbaa,
+
+  "pink":#f56c6c,
+  "blue-dark":#008bd5, 
+  "ssss": #025523,
+  "green":#13ce66,
+  "red-light":#ff4848,
+  "red":#e6162e,
+);
+// font size
+$base-font-size: 1rem;
+$font-sizes: (
+  s: .6 /* 6/10 */,
+  m: .8 /* 8/10 */,
+  l: 1/* 10/10 */,
+  xl: 1.2 /* 12/10 */,
+  2xl: 1.4 /* 14/10 */,
+  3xl: 1.6 /* 16/10 */,
+  4xl: 1.8 /* 18/10 */,
+  5xl: 2 /* 24/10 */,
+  7xl: 2.4 /* 24/10 */,
+  8xl: 2.6 /* 26/10 */, 
+  9xl: 2.8 /* 28/10 */,
+  10xl: 3 /* 30/10 */
+);
+$spacingTypes: (
+  m: margin,
+  p: padding
+);
+$directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left
+);
+$spacingBaseSize: 1rem;
+$spacingSizes: (
+  0: 0,
+  1: 0.25,
+  2: 0.5,
+  3: 1,
+  4: 1.5,
+  4l: 2,
+  5: 3,
+  6: 5,
+  7: 10,
+);
+$flex-jcs: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around
+);
+$flex-ais: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "baseline": baseline,
+  "stretch": stretch
+);
+
+// $iPadPro-cloumn-width: 1366px;
+// $iPad-cloumn-width: 1024px;
+// $iPad-row-width: 768px;
+// $max-mobile-width: 600px;
+
