@@ -41,7 +41,7 @@ npm run build
 npm run serve
 ```
 # 二、博客具体架构与技术实现
-[我的博客网站](https://www.coco727.com/blog/5e6241637a6658290597f2d6).
+[请点击查看详情](https://www.coco727.com/blog/5e6241637a6658290597f2d6).
 
 # 三、Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
