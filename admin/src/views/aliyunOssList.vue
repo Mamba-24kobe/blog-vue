@@ -31,7 +31,7 @@
         <el-form-item props="imgUrl" label="缩略图">
           <el-upload
             class="avatar-uploader"
-            :action="$axios.defaults.baseURL+'/localUpload'"
+            :action="$axios.defaults.baseURL+'/upload'"
             :headers="mixinGetToken()"
             :show-file-list="false"
             :on-success="handleAvatarSuccess"

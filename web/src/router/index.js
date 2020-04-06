@@ -38,14 +38,6 @@ const routes = [
           title: '博文详情'
         }
       },
-      // {
-      //   path: "thoughts",
-      //   name: "Thoughts",
-      //   component: () => import("../views/Thoughts.vue"),
-      //   meta: {
-      //     title: '生活随感'
-      //   }
-      // },
       {
         path: "messages",
         name: "Messages",
@@ -67,8 +59,7 @@ const routes = [
   {
     path: "/abouts",
     name: "AboutMe",
-    component: () =>
-      import("../views/AboutMe.vue"),
+    component: () => import("../views/AboutMe.vue"),
       meta: {
         title: '关于我'
       }

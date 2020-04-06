@@ -113,7 +113,6 @@ export default {
   }
   .dashang {
     background: linear-gradient(135deg, #ffe985 10%, #fa742b);
-    // background: linear-gradient(to right, #4ebbaa, #6bc30d);
   }
   .icon-weixin {
     background: linear-gradient(135deg, #81fbb8 10%, #28c76f);

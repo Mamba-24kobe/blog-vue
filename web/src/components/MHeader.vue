@@ -32,7 +32,6 @@
               <el-dropdown-item divided>
                 <router-link tag="div" to="/blogs">博文</router-link>
               </el-dropdown-item>
-              <!-- <el-dropdown-item><router-link to="/thoughts">首页</router-link>生活随感</el-dropdown-item> -->
               <el-dropdown-item divided>
                 <router-link tag="div" to="/friends">web圈</router-link>
               </el-dropdown-item>
@@ -68,8 +67,8 @@
 </template>
 
 <script>
-import theme from '@/styles.scss'
-console.log(theme,'skin')
+// import theme from '@/styles.scss'
+// console.log(theme,'skin')
 import ThemePicker from './ThemePicker'
 import {mapState,mapMutations} from 'vuex'
 export default {
@@ -92,10 +91,6 @@ export default {
           name: '博文',
           path: '/blogs'
         },
-        // {
-        //   name: '生活随感',
-        //   path: '/thoughts'
-        // },
         {
           name: 'web圈',
           path: '/friends'
@@ -115,9 +110,6 @@ export default {
   created() {
     console.log(this.$route)
     this.activeRoute = this.$route.path
-    console.log('dewew',theme)
-    theme.theme = '#fff'
-    console.log(theme)
   },
   watch: {
     $route(newV, oldV) {
@@ -128,14 +120,6 @@ export default {
     ...mapMutations(['vuex_set_skin_obj']),
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
-    },
-    changeSkin(c) {
-      console.log(c)
-      let theme = this.skinList.find( v => v.name == c)
-      for (let k in theme.root) {
-        document.body.style.setProperty(k, theme.root[k]);
-      }  
-      this.vuex_set_skin_obj(theme)
     }
   }
 };
